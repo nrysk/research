@@ -1,0 +1,23 @@
+{
+    "name": "Python 3.12",
+    "dockerComposeFile": "../docker-compose.yml",
+    "service": "python",
+    "workspaceFolder": "/workspace",
+    "shutdownAction": "none",
+    "customizations": {
+        "vscode": {
+            "settings": {
+                "terminal.integrated.shell.linux": "/bin/bash"
+            },
+            "extensions": [
+                "ms-python.python",
+                "ms-toolsai.jupyter",
+                "ms-python.black-formatter",
+                "eamodio.gitlens",
+                "GitHub.copilot",
+                "ms-python.isort",
+                "janisdd.vscode-edit-csv"
+            ]
+        }
+    }
+}

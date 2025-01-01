@@ -1,0 +1,23 @@
+{
+    "editor.formatOnSave": true,
+    "python.defaultInterpreterPath": "/usr/local/bin/python",
+    "[python]": {
+        "editor.formatOnSave": true,
+        "editor.codeActionsOnSave": {
+            "source.organizeImports": "explicit"
+        }
+    },
+    "isort.args": [
+        "--profile",
+        "black"
+    ],
+    "jupyter.notebookFileRoot": "${fileDirname}",
+    "notebook.defaultFormatter": "ms-python.black-formatter",
+    "notebook.formatOnCellExecution": true,
+    "notebook.formatOnSave.enabled": true,
+    "notebook.lineNumbers": "on",
+    "notebook.codeActionsOnSave": {
+        "source.organizeImports": "explicit"
+    },
+    "csv-edit.readOption_hasHeader": "true"
+}

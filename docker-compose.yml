@@ -1,0 +1,15 @@
+version: "3.8"
+
+services:
+  python:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: r-kawano-research-python
+    env_file:
+      - ".env"
+    tty: true
+    stdin_open: true
+    volumes:
+      - ./:/workspace
+      - $HOME/.ssh:/root/.ssh
