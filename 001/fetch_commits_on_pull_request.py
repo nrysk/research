@@ -63,7 +63,7 @@ def fetch_commits_on_pull_requests(
         for key, value in data["data"]["repository"].items():
             number = key.removeprefix("pull_request_")
             if value is None:
-                pull_request_to_commits[number] = "Not Found"
+                pull_request_to_commits[number] = ["Not Found"]
             else:
                 pull_request_to_commits[number] = [
                     node["commit"]["oid"] for node in value["commits"]["nodes"]
@@ -144,7 +144,7 @@ def main(args):
                         pull_request.external_id,
                         ",".join(
                             pull_request_to_commits.get(
-                                pull_request.external_id, "Not Found"
+                                pull_request.external_id, ["Not Found"]
                             )
                         ),
                     ]
