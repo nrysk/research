@@ -16,7 +16,8 @@
                 "eamodio.gitlens",
                 "GitHub.copilot",
                 "ms-python.isort",
-                "janisdd.vscode-edit-csv"
+                "janisdd.vscode-edit-csv",
+                "yzhang.markdown-all-in-one"
             ]
         }
     }
