@@ -87,7 +87,7 @@ def main(args):
 
         # pull_request と commit_sha_list のペアを含む csv ファイルを読み込み
         repository = pull_request_system.url.split("/")[-2]
-        lazy_df = pl.scan_csv("commits_on_pull_request.csv")
+        lazy_df = pl.scan_csv("data/commits_on_pull_request.csv")
         filtered_df = (
             lazy_df.filter(pl.col("repository") == repository)
             .select("pull_request_id", "commit_sha_list")
@@ -164,6 +164,8 @@ def main(args):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
-    parser.add_argument("-o", "--output", type=str, default="pull_request_info.csv")
+    parser.add_argument(
+        "-o", "--output", type=str, default="data/pull_request_info.csv"
+    )
     args = parser.parse_args()
     main(args)

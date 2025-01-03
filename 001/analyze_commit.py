@@ -115,6 +115,6 @@ def main(args):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
-    parser.add_argument("-o", "--output", type=str, default="commit_info.csv")
+    parser.add_argument("-o", "--output", type=str, default="data/commit_info.csv")
     args = parser.parse_args()
     main(args)

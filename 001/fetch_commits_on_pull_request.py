@@ -154,7 +154,7 @@ def main(args):
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument(
-        "-o", "--output", type=str, default="commits_on_pull_request.csv"
+        "-o", "--output", type=str, default="data/commits_on_pull_request.csv"
     )
     args = parser.parse_args()
     main(args)
