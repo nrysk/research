@@ -12,6 +12,7 @@ from pycoshark.mongomodels import (
     Project,
     PullRequest,
     PullRequestComment,
+    PullRequestCommit,
     PullRequestReview,
     PullRequestReviewComment,
     PullRequestSystem,
@@ -19,17 +20,6 @@ from pycoshark.mongomodels import (
     VCSSystem,
 )
 from pycoshark.utils import create_mongodb_uri_string
-
-SZZ_LABELS = [
-    "SZZ",
-    "JL+R",
-    "JLIP+R",
-    "JLMIV",
-    "JLMIV+",
-    "JLMIV+AV",
-    "JLMIV+RAV",
-    "JLMIV+R",
-]
 
 
 def main(args):
@@ -72,7 +62,23 @@ def main(args):
             file=sys.stderr,
         )
 
-        # マージ済み pull_request のカウント
+        # pull_request の日付の最小値と最大値を取得
+        first_pull_request = (
+            PullRequest.objects(pull_request_system_id=pull_request_system.id)
+            .only("created_at")
+            .order_by("+created_at")
+            .first()
+        )
+        last_pull_request = (
+            PullRequest.objects(pull_request_system_id=pull_request_system.id)
+            .only("created_at")
+            .order_by("-created_at")
+            .first()
+        )
+        row["fprd"] = first_pull_request.created_at if first_pull_request else None
+        row["lprd"] = last_pull_request.created_at if last_pull_request else None
+
+        # マージされた pull_request のカウント
         row["nmpr"] = PullRequest.objects(
             pull_request_system_id=pull_request_system.id,
             merged_at__exists=True,
@@ -85,36 +91,40 @@ def main(args):
             state="closed",
         ).count()
 
-        # pull_request と commit_sha_list のペアを含む csv ファイルを読み込み
-        repository = pull_request_system.url.split("/")[-2]
-        lazy_df = pl.scan_csv("data/commits_on_pull_request.csv")
-        filtered_df = (
-            lazy_df.filter(pl.col("repository") == repository)
-            .select("pull_request_id", "commit_sha_list")
-            .with_columns(pl.col("commit_sha_list").str.split(","))
-        ).collect()
+        # マージされた pull_request 毎に commit の情報を取得
+        pull_requests: list[PullRequest] = PullRequest.objects(
+            pull_request_system_id=pull_request_system.id,
+            merged_at__exists=True,
+        ).only("id")
+        for pull_request in pull_requests:
+            # pull_request に紐づいた commit_id のリストを取得
+            pull_request_commits: list[PullRequestCommit] = PullRequestCommit.objects(
+                pull_request_id=pull_request.id
+            ).only("commit_id")
+            commit_ids = [pc.commit_id for pc in pull_request_commits]
 
-        for pull_request_id, commit_sha_list in filtered_df.iter_rows():
+            # commit_ids の欠損度合いをカウント
+            row["nmpr_all"] += all(commit_ids)
+            row["nmpr_partial"] += any(commit_ids) and not all(commit_ids)
+            row["nmpr_none"] += not any(commit_ids)
 
-            # commit_sha_list が list でない場合はスキップ
-            if not isinstance(commit_sha_list, list):
+            # commit_ids が欠損している場合はスキップ
+            if None in commit_ids:
                 continue
 
-            # commit を 1 つしか持たない pull_request のカウント
-            row["nmpr_1c"] += len(commit_sha_list) == 1
+            # commit のリストを取得
+            commits: list[Commit] = Commit.objects(id__in=commit_ids).only(
+                "id", "labels"
+            )
 
-            # commit を 30 以上持つ pull_request のカウント
-            row["nmpr_30c"] += len(commit_sha_list) >= 30
-
-            commits: list[Commit] = Commit.objects(
-                vcs_system_id=vcs_system.id, revision_hash__in=commit_sha_list
-            ).only("id", "labels")
-
-            # データベース内に commit が存在するかのカウント
-            row["nc_f"] += len(commits)
-            row["nc_nf"] += len(commit_sha_list) - len(commits)
-            row["npr_cf"] += len(commits) == len(commit_sha_list)
-            row["npr_cnf"] += len(commits) == 0
+            # commit 数の度数分布を取得
+            row["nmpr_nc==0"] += len(commits) == 0
+            row["nmpr_nc==1"] += len(commits) == 1
+            row["nmpr_1<nc<=5"] += 1 <= len(commits) <= 5
+            row["nmpr_5<nc<=10"] += 5 < len(commits) <= 10
+            row["nmpr_10<nc<=20"] += 10 < len(commits) <= 20
+            row["nmpr_20<nc<=30"] += 20 < len(commits) <= 30
+            row["nmpr_30<nc"] += 30 < len(commits)
 
             # bug-fixing と bug-inducing のカウント
             fixing_flags = defaultdict(bool)
@@ -135,22 +145,14 @@ def main(args):
                         inducing_flags[induce["label"]] = True
 
             # bug-fixing のカウント
-            row["nbfpr"] += any(fixing_flags.values())
-            row["nbfpr_a"] += fixing_flags["a"]
-            row["nbfpr_io"] += fixing_flags["io"]
-            row["nbfpr_v"] += fixing_flags["v"]
-            row["nbfpr_if"] += fixing_flags["if"]
+            row["nmbfpr"] += any(fixing_flags.values())
+            for label, flag in fixing_flags.items():
+                row[f"nmbfpr_{label}"] += flag
 
             # bug-inducing のカウント
-            row["nbipr"] += any(inducing_flags.values())
-            row["nbipr_szz"] += inducing_flags["SZZ"]
-            row["nbipr_jl+r"] += inducing_flags["JL+R"]
-            row["nbipr_jlip+r"] += inducing_flags["JLIP+R"]
-            row["nbipr_jlmiv"] += inducing_flags["JLMIV"]
-            row["nbipr_jlmiv+"] += inducing_flags["JLMIV+"]
-            row["nbipr_jlmiv+av"] += inducing_flags["JLMIV+AV"]
-            row["nbipr_jlmiv+rav"] += inducing_flags["JLMIV+RAV"]
-            row["nbipr_jlmiv+r"] += inducing_flags["JLMIV+R"]
+            row["nmbipr"] += any(inducing_flags.values())
+            for label, flag in inducing_flags.items():
+                row[f"nmbipr_{label.lower()}"] += flag
 
         df = pl.concat([df, pl.DataFrame(row)], how="diagonal")
 
