@@ -9,17 +9,6 @@ from mongoengine import connect
 from pycoshark.mongomodels import Commit, FileAction, Project, VCSSystem
 from pycoshark.utils import create_mongodb_uri_string
 
-SZZ_LABELS = [
-    "SZZ",
-    "JL+R",
-    "JLIP+R",
-    "JLMIV",
-    "JLMIV+",
-    "JLMIV+AV",
-    "JLMIV+RAV",
-    "JLMIV+R",
-]
-
 
 def main(args):
     # データベースに接続
@@ -46,6 +35,8 @@ def main(args):
 
         vcs_system: VCSSystem = VCSSystem.objects(project_id=project.id).first()
         row["project"] = project.name
+
+        # commit のカウント
         row["nc"] = Commit.objects(vcs_system_id=vcs_system.id).count()
 
         # 進捗表示
@@ -54,6 +45,23 @@ def main(args):
             file=sys.stderr,
         )
 
+        # commit の日付の最小値と最大値を取得
+        row["fcd"] = (
+            Commit.objects(vcs_system_id=vcs_system.id)
+            .only("committer_date")
+            .order_by("+committer_date")
+            .first()
+            .committer_date
+        )
+        row["lcd"] = (
+            Commit.objects(vcs_system_id=vcs_system.id)
+            .only("committer_date")
+            .order_by("-committer_date")
+            .first()
+            .committer_date
+        )
+
+        # bug-fixing と bug-inducing のカウント
         commits: list[Commit] = Commit.objects(vcs_system_id=vcs_system.id).only(
             "id", "labels"
         )
@@ -65,9 +73,6 @@ def main(args):
                     end="\r",
                     file=sys.stderr,
                 )
-
-                # メモリ解放
-                gc.collect()
 
             # bug-fixing のカウント
             is_bugfixing_a = commit.labels.get("adjustedszz_bugfix", False)
@@ -84,7 +89,7 @@ def main(args):
             row["nbfc_if"] += is_bugfixing_if
 
             # bug-inducing のカウント
-            flags = {label: False for label in SZZ_LABELS}
+            flags = defaultdict(bool)
             file_actions: list[FileAction] = FileAction.objects(
                 commit_id=commit.id
             ).only("induces")
@@ -92,25 +97,17 @@ def main(args):
                 for induce in file_action.induces:
                     flags[induce["label"]] = True
             row["nbic"] += any(flags.values())
-            row["nbic_szz"] += flags["SZZ"]
-            row["nbic_jl+r"] += flags["JL+R"]
-            row["nbic_jlip+r"] += flags["JLIP+R"]
-            row["nbic_jlmiv"] += flags["JLMIV"]
-            row["nbic_jlmiv+"] += flags["JLMIV+"]
-            row["nbic_jlmiv+av"] += flags["JLMIV+AV"]
-            row["nbic_jlmiv+rav"] += flags["JLMIV+RAV"]
-            row["nbic_jlmiv+r"] += flags["JLMIV+R"]
+            for label, flag in flags.items():
+                row[f"nbic_{label.lower()}"] += flag
 
-            del commit, file_actions, flags
-
-        print(row.__str__(), file=sys.stderr)
+        print(dict(row), file=sys.stderr)
 
         df = df.vstack(pl.DataFrame(row))
 
+    print("Done.", file=sys.stderr)
+
     with open(args.output, "w") as f:
         df.write_csv(f)
-
-    print("Done.", file=sys.stderr)
 
 
 if __name__ == "__main__":
