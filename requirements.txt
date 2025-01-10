@@ -4,3 +4,5 @@ polars
 matplotlib
 seaborn
 pycoshark
+textstat
+pyarrow
