@@ -102,7 +102,7 @@ def main(args):
 
         print(dict(row), file=sys.stderr)
 
-        df = df.vstack(pl.DataFrame(row))
+        df = pl.concat([df, pl.DataFrame(row)], how="diagonal")
 
     print("Done.", file=sys.stderr)
 
