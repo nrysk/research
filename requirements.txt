@@ -6,3 +6,4 @@ seaborn
 pycoshark
 textstat
 pyarrow
+gql[all]
