@@ -6,7 +6,13 @@ import polars as pl
 from gql import Client, gql
 from gql.transport.requests import RequestsHTTPTransport
 from mongoengine import connect
-from pycoshark.mongomodels import Project, PullRequestSystem
+from pycoshark.mongomodels import (
+    Commit,
+    Project,
+    PullRequest,
+    PullRequestSystem,
+    VCSSystem,
+)
 from pycoshark.utils import create_mongodb_uri_string
 
 GITHUB_GRAPHQL_ENDPOINT = "https://api.github.com/graphql"
@@ -93,6 +99,19 @@ def main(args):
 
                 else:
                     row[k] = v if v is not None else ""
+
+            # commit と pull request の数を取得
+            vcs_system = VCSSystem.objects(project_id=row["project_id"]).first()
+            pull_request_system = PullRequestSystem.objects(
+                project_id=row["project_id"]
+            ).first()
+            row["#cmt"] = Commit.objects(vcs_system_id=vcs_system.id).count()
+            row["#pr"] = PullRequest.objects(
+                pull_request_system_id=pull_request_system.id
+            ).count()
+            row["#mpr"] = PullRequest.objects(
+                pull_request_system_id=pull_request_system.id, merged_at__exists=True
+            ).count()
 
             df = df.vstack(pl.DataFrame(row))
 

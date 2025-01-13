@@ -1,99 +1,99 @@
-project_id,owner.login,name,description,url,createdAt,archivedAt,autoMergeAllowed,assignableUsers.totalCount,mirrorUrl
-5beebd870da3ef21a62b756e,apache,commons-rdf,Apache Commons RDF,https://github.com/apache/commons-rdf,2015-03-19T07:00:05Z,"",false,27,""
-58c8979e0da3ef6363ccb8de,apache,ant-ivy,Mirror of Apache Ant Ivy,https://github.com/apache/ant-ivy,2014-05-28T07:00:08Z,"",false,8,""
-58bfd5860da3ef7cef464c78,apache,commons-math,Apache Commons Math,https://github.com/apache/commons-math,2014-10-08T07:00:06Z,"",false,32,""
-5b1f9fbb0da3ef49b7d0a480,apache,mahout,Mirror of Apache Mahout,https://github.com/apache/mahout,2014-05-23T07:00:07Z,"",false,14,""
-5b27c4cc0da3ef789daec0a1,apache,opennlp,Apache OpenNLP,https://github.com/apache/opennlp,2011-11-09T08:00:09Z,"",false,19,""
-5b34a9210da3ef789cc240ec,apache,calcite,Apache Calcite,https://github.com/apache/calcite,2014-06-25T07:00:07Z,"",false,59,""
-5b3b2d520da3ef789ec953ea,apache,cayenne,Mirror of Apache Cayenne,https://github.com/apache/cayenne,2009-05-21T01:05:37Z,"",false,7,""
-5b5838020da3ef04920e02fc,apache,archiva,Apache Archiva Repository,https://github.com/apache/archiva,2014-04-10T07:00:07Z,2024-04-25T13:25:21Z,false,12,""
-5da724f20da3ef03c84bcf48,apache,bigtop,"Bigtop is an Apache Foundation project for Infrastructure Engineers and Data Scientists looking for comprehensive packaging, testing, and configuration of the leading open source big data components.",https://github.com/apache/bigtop,2011-08-04T16:09:56Z,"",false,22,""
-5c87a7300da3ef6c8a4bf6d8,apache,commons-bcel,Apache Commons BCEL,https://github.com/apache/commons-bcel,2013-07-13T07:00:12Z,"",false,30,""
-5bed276c0da3ef21a58b337a,apache,commons-beanutils,Apache Commons Beanutils,https://github.com/apache/commons-beanutils,2013-06-12T07:00:16Z,"",false,32,""
-5bed58010da3ef21a58b337b,apache,commons-codec,Apache Commons Codec,https://github.com/apache/commons-codec,2009-05-21T01:20:25Z,"",false,35,""
-5bed254e0da3ef21a62b756d,apache,commons-collections,Apache Commons Collections,https://github.com/apache/commons-collections,2009-05-21T01:12:20Z,"",false,35,""
-5bed583a0da3ef21a58b337c,apache,commons-compress,Apache Commons Compress,https://github.com/apache/commons-compress,2011-10-15T07:00:08Z,"",false,35,""
-5bed83440da3ef21a2107882,apache,commons-configuration,Apache Commons Configuration,https://github.com/apache/commons-configuration,2013-02-26T08:00:12Z,"",false,34,""
-5c87a9510da3ef6c89b69038,apache,commons-dbcp,Apache Commons DBCP,https://github.com/apache/commons-dbcp,2013-07-10T07:00:11Z,"",false,34,""
-5bee79dc0da3ef21a58b337d,apache,commons-digester,Apache Commons Digester,https://github.com/apache/commons-digester,2013-07-12T07:00:18Z,"",false,31,""
-5bee7a580da3ef21a58b337f,apache,commons-io,Apache Commons IO,https://github.com/apache/commons-io,2009-05-21T01:38:37Z,"",false,35,""
-5bee7a9d0da3ef21a3a094b1,apache,commons-jcs,Apache Commons JCS,https://github.com/apache/commons-jcs,2013-07-10T07:00:13Z,"",false,29,""
-5bbe0efb0da3ef0ddd6d593d,apache,commons-lang,Apache Commons Lang,https://github.com/apache/commons-lang,2009-05-21T01:24:46Z,"",false,36,""
-5bec1d600da3ef21a3a094af,apache,commons-net,Apache Commons Net,https://github.com/apache/commons-net,2012-12-11T08:00:16Z,"",false,32,""
-5bf29d060da3ef21a62b7570,apache,commons-validator,Apache Commons Validator,https://github.com/apache/commons-validator,2010-09-26T07:00:19Z,"",false,32,""
-5bf29db50da3ef21a3a094b2,apache,commons-vfs,Apache Commons VFS,https://github.com/apache/commons-vfs,2013-07-13T07:00:13Z,"",false,33,""
-5bf51bf90da3ef21a2107884,apache,giraph,Mirror of Apache Giraph,https://github.com/apache/giraph,2011-08-28T07:00:33Z,2023-10-30T12:13:08Z,false,7,""
-5cae08e00da3ef745f799438,apache,gora,The Apache Gora open source framework provides an in-memory data model and persistence for big data.,https://github.com/apache/gora,2014-05-19T07:00:07Z,"",false,14,""
-5b4769050da3ef0712a85126,apache,parquet-java,Apache Parquet Java,https://github.com/apache/parquet-java,2014-06-10T07:00:07Z,"",false,22,""
-5b485f310da3ef07106a7910,apache,ws-wss4j,Apache WebServices - WSS4J,https://github.com/apache/ws-wss4j,2019-10-31T14:25:13Z,"",false,9,""
-5b43728b0da3ef07106a790f,apache,kylin,Apache Kylin,https://github.com/apache/kylin,2015-01-03T08:00:05Z,"",false,27,""
-5b45f6670da3ef0712a85125,apache,nutch,Apache Nutch is an extensible and scalable web crawler,https://github.com/apache/nutch,2009-05-21T01:17:48Z,"",false,15,""
-5b4853f80da3ef0712a85127,apache,tika,"The Apache Tika toolkit detects and extracts metadata and text from over a thousand different file types (such as PPT, XLS, and PDF).",https://github.com/apache/tika,2009-05-21T02:12:11Z,"",false,22,""
-5b62dc8b0da3ef049126bdb8,apache,deltaspike,Mirror of Apache Deltaspike,https://github.com/apache/deltaspike,2013-06-04T07:00:12Z,"",false,15,""
-5b7ad7860da3ef049126bdbb,apache,systemds,An open source ML system for the end-to-end data science lifecycle,https://github.com/apache/systemds,2015-11-10T08:00:06Z,"",false,16,""
-5b89102a0da3ef04920e02fe,apache,lens,Mirror of Apache Lens,https://github.com/apache/lens,2014-11-12T08:00:06Z,2021-05-12T02:22:45Z,false,6,""
-5bdb01850da3ef21a58b3377,apache,knox,Mirror of Apache Knox,https://github.com/apache/knox,2014-03-01T08:00:06Z,"",false,11,""
-5b6446e40da3ef048efc47dd,apache,jspwiki,"Apache JSPWiki is a leading open source WikiWiki engine, feature-rich and built around standard JEE components (Java, servlets, JSP)",https://github.com/apache/jspwiki,2009-03-27T15:41:58Z,"",false,10,""
-5c3f09db0da3ef512137483f,apache,manifoldcf,Mirror of Apache ManifoldCF,https://github.com/apache/manifoldcf,2012-06-22T07:00:16Z,"",false,7,""
-5c5012230da3ef08914b280e,apache,eagle,Mirror of Apache Eagle,https://github.com/apache/eagle,2015-11-18T08:00:06Z,2021-05-12T02:22:41Z,false,4,""
-5caee5640da3ef745ec4cc84,apache,santuario-java,Mirror of Apache Santuario Java,https://github.com/apache/santuario-java,2011-07-23T07:00:31Z,2020-05-26T11:08:19Z,false,4,""
-5b0fa95e0da3ef431af80833,apache,kafka,Mirror of Apache Kafka,https://github.com/apache/kafka,2011-08-15T18:06:16Z,"",false,68,""
-5b110ee90da3ef05a99f0de6,apache,zeppelin,"Web-based notebook that enables data-driven, interactive data analytics and collaborative documents with SQL, Scala and more.",https://github.com/apache/zeppelin,2015-03-25T07:00:06Z,"",false,13,""
-5b2225520da3ef3e52ece5e2,apache,struts,"Apache Struts is a free, open-source, MVC framework for creating elegant, modern Java web applications",https://github.com/apache/struts,2014-01-15T08:00:08Z,"",false,13,""
-5b2903690da3ef789cc240ea,apache,pig,Mirror of Apache Pig,https://github.com/apache/pig,2009-05-21T01:10:43Z,"",false,3,""
-5b4329280da3ef07116c76f0,apache,falcon,Mirror of Apache Falcon,https://github.com/apache/falcon,2013-07-20T07:00:14Z,2021-04-04T19:05:21Z,false,5,""
-5b72ac790da3ef049126bdb9,apache,xerces2-j,Mirror of Apache Xerces2 Java,https://github.com/apache/xerces2-j,2010-11-15T08:00:08Z,"",false,3,""
-5b76be770da3ef049126bdba,apache,tez,Apache Tez,https://github.com/apache/tez,2013-04-08T07:20:23Z,"",false,11,""
-5b7ffd4e0da3ef049126bdbd,apache,storm,Apache Storm,https://github.com/apache/storm,2013-11-05T08:00:14Z,"",false,26,""
-5bc5fab40da3ef0dde0d1fed,apache,logging-flume,"Apache Flume is a distributed, reliable, and available service for efficiently collecting, aggregating, and moving large amounts of log-like data",https://github.com/apache/logging-flume,2011-08-12T18:20:14Z,"",false,18,""
-5bc5cf050da3ef0de20a7284,apache,pdfbox,Mirror of Apache PDFBox,https://github.com/apache/pdfbox,2009-09-26T08:00:19Z,"",false,3,""
-5bd022e30da3ef1a10738359,apache,nifi,Apache NiFi,https://github.com/apache/nifi,2014-12-12T08:00:05Z,"",false,51,""
-5bee7a2a0da3ef21a58b337e,apache,commons-imaging,Apache Commons Imaging (previously Sanselan) is a pure-Java image library,https://github.com/apache/commons-imaging,2013-07-11T07:00:17Z,"",false,31,""
-5bdc03c30da3ef21a62b756c,apache,derby,Mirror of Apache Derby,https://github.com/apache/derby,2011-06-19T07:00:34Z,"",false,3,""
-5c4576f30da3ef08928c5fd7,apache,ranger,"Apache Ranger - To enable, monitor and manage comprehensive data security across the Hadoop platform and beyond",https://github.com/apache/ranger,2014-07-27T07:00:08Z,"",false,25,""
-600331161b86c4258c362292,apache,directory-fortress-core,Mirror of Apache Directory Fortress Core,https://github.com/apache/directory-fortress-core,2015-10-02T07:00:05Z,"",false,9,""
-5ca733460da3ef745ec4cc83,apache,phoenix,Apache Phoenix,https://github.com/apache/phoenix,2014-06-04T07:00:08Z,"",false,33,""
-5cb58a500da3ef74602db8dd,apache,helix,Mirror of Apache Helix,https://github.com/apache/helix,2014-01-13T08:00:06Z,"",false,16,""
-5cb58add0da3ef7463511086,apache,jena,"Apache Jena, A free and open source Java framework for building Semantic Web and Linked Data applications.",https://github.com/apache/jena,2013-01-04T08:00:32Z,"",false,15,""
-5cd27fe20da3ef671cda02e7,apache,httpcomponents-client,Mirror of Apache HttpClient,https://github.com/apache/httpcomponents-client,2009-05-21T01:43:06Z,"",false,11,""
-5d8cb4a10da3ef0b68077801,apache,httpcomponents-core,Mirror of Apache HttpCore,https://github.com/apache/httpcomponents-core,2009-05-21T01:41:50Z,"",false,9,""
-5d91bbb20da3ef35cfd2f443,apache,streams,Apache Streams,https://github.com/apache/streams,2014-03-18T07:00:06Z,2025-01-06T21:00:56Z,false,9,""
-5d91bc110da3ef35ce147e4a,apache,samza,Mirror of Apache Samza,https://github.com/apache/samza,2015-03-14T07:00:05Z,"",false,25,""
-5d91bcdd0da3ef35d1432e3c,apache,roller,Mirror of Apache Roller,https://github.com/apache/roller,2009-05-21T02:42:21Z,"",false,7,""
-5d9edd090da3ef03c84bcf46,apache,mina-sshd,Apache MINA sshd is a comprehensive Java library for client- and server-side SSH.,https://github.com/apache/mina-sshd,2010-05-26T23:38:08Z,"",false,8,""
-5db7e7440da3ef03c5c29845,apache,jackrabbit,Apache Jackrabbit,https://github.com/apache/jackrabbit,2009-05-21T01:43:24Z,"",false,27,""
-5e6f7e7e0da3ef2ed37503a8,apache,oozie,Mirror of Apache Oozie,https://github.com/apache/oozie,2011-09-14T07:00:10Z,"",false,11,""
-5e71c4d43c63727691322420,apache,activemq,Apache ActiveMQ Classic,https://github.com/apache/activemq,2009-05-21T01:33:45Z,"",false,25,""
-5e84988880c620a732667310,apache,maven,Apache Maven core,https://github.com/apache/maven,2009-05-21T03:22:03Z,"",false,34,""
-5e8ecd873c63727691322421,apache,airavata,A general purpose Distributed Systems Framework,https://github.com/apache/airavata,2014-01-29T08:00:06Z,"",false,16,""
-5f1050f2eafc140f94041bf7,apache,openjpa,Apache OpenJPA,https://github.com/apache/openjpa,2009-05-21T01:13:25Z,"",false,11,""
-6076b1088d56179891397c6f,apache,directory-studio,Apache Directory Studio,https://github.com/apache/directory-studio,2009-05-20T01:52:19Z,"",false,12,""
-60814f734064fcb5083898b4,apache,xmlgraphics-batik,Apache XML Graphics Batik,https://github.com/apache/xmlgraphics-batik,2009-05-21T02:32:14Z,"",false,4,""
-608b9b0227ad48a9ceb48654,apache,curator,Apache Curator,https://github.com/apache/curator,2014-03-03T08:00:07Z,"",false,14,""
-608b9e8d4064fcb5083898b5,apache,directory-kerby,Mirror of Apache Directory Kerby,https://github.com/apache/directory-kerby,2015-03-17T07:00:05Z,"",false,13,""
-608c3a354064fcb5083898b6,apache,fineract,Apache Fineract,https://github.com/apache/fineract,2015-12-22T08:00:06Z,"",false,36,""
-60a24a978d56179891397c71,apache,freemarker,Apache Freemarker,https://github.com/apache/freemarker,2015-09-04T07:00:05Z,"",false,8,""
-60a24ac427ad48a9ceb48656,apache,openwebbeans,Apache OpenWebBeans,https://github.com/apache/openwebbeans,2011-01-28T08:00:11Z,"",false,14,""
-5beebd530da3ef21a2107883,apache,commons-jexl,Apache Commons JEXL,https://github.com/apache/commons-jexl,2013-07-10T07:00:14Z,"",false,30,""
-5beebdd90da3ef21a62b756f,apache,commons-scxml,Apache Commons SCXML,https://github.com/apache/commons-scxml,2015-07-10T07:00:05Z,"",false,31,""
-60a24a6992d37bcecc65bf82,apache,cxf-fediz,Mirror of Apache CXF,https://github.com/apache/cxf-fediz,2014-03-08T08:00:07Z,"",false,11,""
-5ca4c6b26bcebe2f4003c6e4,apache,zookeeper,Apache ZooKeeper,https://github.com/apache/zookeeper,2009-03-27T15:41:56Z,"",false,22,""
-610939f8a6eb327cba047eca,apache,tapestry-5,A component-oriented framework for creating highly scalable web applications in Java.,https://github.com/apache/tapestry-5,2012-05-23T07:00:11Z,"",false,7,""
-61093a618d56179891397c7b,apache,reef,Mirror of Apache REEF,https://github.com/apache/reef,2014-10-23T07:00:10Z,2022-08-04T01:33:12Z,false,12,""
-61093ee18d56179891397c7c,apache,juddi,Mirror of Apache jUDDI,https://github.com/apache/juddi,2014-02-21T08:00:09Z,2023-02-27T20:55:06Z,false,6,""
-6110d80c27ad48a9ceb48659,apache,velocity-engine,Mirror of Apache Velocity Engine,https://github.com/apache/velocity-engine,2013-11-22T08:00:13Z,"",false,7,""
-6110d8254064fcb5083898b9,apache,velocity-tools,Mirror of Apache Velocity Tools,https://github.com/apache/velocity-tools,2013-11-22T08:00:14Z,"",false,6,""
-6110e8974064fcb5083898ba,apache,karaf-cellar,Mirror of Apache Karaf Cellar,https://github.com/apache/karaf-cellar,2011-05-22T07:00:07Z,"",false,11,""
-61435682b0e435ddc69c115a,apache,maven-archetype,Apache Maven Archetype (Plugin),https://github.com/apache/maven-archetype,2009-05-21T08:40:29Z,"",false,28,""
-61486e4edde5881c37c6143f,apache,maven-doxia,Apache Maven Doxia base,https://github.com/apache/maven-doxia,2009-05-21T03:16:25Z,"",false,28,""
-6149f43cb0e435ddc69c115b,apache,maven-scm,Apache Maven SCM (Plugin),https://github.com/apache/maven-scm,2009-05-21T00:33:04Z,"",false,26,""
-614d90dff4bb27b887c2f3ed,apache,maven-surefire,Apache Maven Surefire,https://github.com/apache/maven-surefire,2010-08-12T03:32:41Z,"",false,35,""
-61541ebab0e435ddc69c115c,apache,maven-wagon,Apache Maven Wagon,https://github.com/apache/maven-wagon,2009-05-20T02:01:12Z,"",false,26,""
-615b1a1514fce7546046bf26,apache,oodt,Mirror of Apache OODT,https://github.com/apache/oodt,2013-01-21T08:00:15Z,2023-07-03T18:39:01Z,false,11,""
-615c13af3298191e9c3db4e3,apache,portals-pluto,Mirror of Apache Pluto,https://github.com/apache/portals-pluto,2014-05-23T07:00:07Z,"",false,9,""
-615e90db3044794dcc96fe1e,apache,qpid-jms,Mirror of Apache Qpid JMS,https://github.com/apache/qpid-jms,2014-09-24T07:00:07Z,"",false,11,""
-6161afe13298191e9c3db4e4,apache,sis,Java language library for developing geospatial applications following OGC/ISO standards.,https://github.com/apache/sis,2013-06-11T07:00:15Z,"",false,8,""
-616813a52d6371da535b391f,apache,uima-ducc,Apache UIMA Ducc,https://github.com/apache/uima-ducc,2023-07-18T13:08:57Z,"",false,7,""
-5e715356b17d31206492bf58,apache,avro,Apache Avro is a data serialization system.,https://github.com/apache/avro,2009-05-21T02:48:37Z,"",false,25,""
-61699f852d6371da535b3920,apache,usergrid,Mirror of Apache Usergrid,https://github.com/apache/usergrid,2013-11-05T08:00:14Z,2024-06-07T16:04:09Z,false,12,""
-5bc0509e0da3ef0ddd6d593e,apache,james-project,Emails at the heart of your business logic!,https://github.com/apache/james-project,2015-07-11T07:00:06Z,"",false,16,""
+project_id,owner.login,name,description,url,createdAt,archivedAt,autoMergeAllowed,assignableUsers.totalCount,mirrorUrl,#cmt,#pr,#mpr
+5beebd870da3ef21a62b756e,apache,commons-rdf,Apache Commons RDF,https://github.com/apache/commons-rdf,2015-03-19T07:00:05Z,"",false,27,"",1311,56,37
+58c8979e0da3ef6363ccb8de,apache,ant-ivy,Mirror of Apache Ant Ivy,https://github.com/apache/ant-ivy,2014-05-28T07:00:08Z,"",false,8,"",3189,81,28
+58bfd5860da3ef7cef464c78,apache,commons-math,Apache Commons Math,https://github.com/apache/commons-math,2014-10-08T07:00:06Z,"",false,32,"",7222,160,39
+5b1f9fbb0da3ef49b7d0a480,apache,mahout,Mirror of Apache Mahout,https://github.com/apache/mahout,2014-05-23T07:00:07Z,"",false,14,"",4167,409,65
+5b27c4cc0da3ef789daec0a1,apache,opennlp,Apache OpenNLP,https://github.com/apache/opennlp,2011-11-09T08:00:09Z,"",false,19,"",2685,389,184
+5b34a9210da3ef789cc240ec,apache,calcite,Apache Calcite,https://github.com/apache/calcite,2014-06-25T07:00:07Z,"",false,59,"",2926,2310,600
+5b3b2d520da3ef789ec953ea,apache,cayenne,Mirror of Apache Cayenne,https://github.com/apache/cayenne,2009-05-21T01:05:37Z,"",false,7,"",6619,441,320
+5b5838020da3ef04920e02fc,apache,archiva,Apache Archiva Repository,https://github.com/apache/archiva,2014-04-10T07:00:07Z,2024-04-25T13:25:21Z,false,12,"",10261,40,29
+5da724f20da3ef03c84bcf48,apache,bigtop,"Bigtop is an Apache Foundation project for Infrastructure Engineers and Data Scientists looking for comprehensive packaging, testing, and configuration of the leading open source big data components.",https://github.com/apache/bigtop,2011-08-04T16:09:56Z,"",false,22,"",3298,695,248
+5c87a7300da3ef6c8a4bf6d8,apache,commons-bcel,Apache Commons BCEL,https://github.com/apache/commons-bcel,2013-07-13T07:00:12Z,"",false,30,"",1429,75,39
+5bed276c0da3ef21a58b337a,apache,commons-beanutils,Apache Commons Beanutils,https://github.com/apache/commons-beanutils,2013-06-12T07:00:16Z,"",false,32,"",1341,62,23
+5bed58010da3ef21a58b337b,apache,commons-codec,Apache Commons Codec,https://github.com/apache/commons-codec,2009-05-21T01:20:25Z,"",false,35,"",1838,67,26
+5bed254e0da3ef21a62b756d,apache,commons-collections,Apache Commons Collections,https://github.com/apache/commons-collections,2009-05-21T01:12:20Z,"",false,35,"",3380,200,84
+5bed583a0da3ef21a58b337c,apache,commons-compress,Apache Commons Compress,https://github.com/apache/commons-compress,2011-10-15T07:00:08Z,"",false,35,"",2755,157,55
+5bed83440da3ef21a2107882,apache,commons-configuration,Apache Commons Configuration,https://github.com/apache/commons-configuration,2013-02-26T08:00:12Z,"",false,34,"",3717,83,34
+5c87a9510da3ef6c89b69038,apache,commons-dbcp,Apache Commons DBCP,https://github.com/apache/commons-dbcp,2013-07-10T07:00:11Z,"",false,34,"",2205,79,36
+5bee79dc0da3ef21a58b337d,apache,commons-digester,Apache Commons Digester,https://github.com/apache/commons-digester,2013-07-12T07:00:18Z,"",false,31,"",2535,11,0
+5bee7a580da3ef21a58b337f,apache,commons-io,Apache Commons IO,https://github.com/apache/commons-io,2009-05-21T01:38:37Z,"",false,35,"",2262,180,77
+5bee7a9d0da3ef21a3a094b1,apache,commons-jcs,Apache Commons JCS,https://github.com/apache/commons-jcs,2013-07-10T07:00:13Z,"",false,29,"",1622,14,5
+5bbe0efb0da3ef0ddd6d593d,apache,commons-lang,Apache Commons Lang,https://github.com/apache/commons-lang,2009-05-21T01:24:46Z,"",false,36,"",5792,689,214
+5bec1d600da3ef21a3a094af,apache,commons-net,Apache Commons Net,https://github.com/apache/commons-net,2012-12-11T08:00:16Z,"",false,32,"",2270,66,23
+5bf29d060da3ef21a62b7570,apache,commons-validator,Apache Commons Validator,https://github.com/apache/commons-validator,2010-09-26T07:00:19Z,"",false,32,"",3416,50,17
+5bf29db50da3ef21a3a094b2,apache,commons-vfs,Apache Commons VFS,https://github.com/apache/commons-vfs,2013-07-13T07:00:13Z,"",false,33,"",2212,150,59
+5bf51bf90da3ef21a2107884,apache,giraph,Mirror of Apache Giraph,https://github.com/apache/giraph,2011-08-28T07:00:33Z,2023-10-30T12:13:08Z,false,7,"",1121,146,0
+5cae08e00da3ef745f799438,apache,gora,The Apache Gora open source framework provides an in-memory data model and persistence for big data.,https://github.com/apache/gora,2014-05-19T07:00:07Z,"",false,14,"",1329,224,182
+5b4769050da3ef0712a85126,apache,parquet-java,Apache Parquet Java,https://github.com/apache/parquet-java,2014-06-10T07:00:07Z,"",false,22,"",2249,829,254
+5b485f310da3ef07106a7910,apache,ws-wss4j,Apache WebServices - WSS4J,https://github.com/apache/ws-wss4j,2019-10-31T14:25:13Z,"",false,9,"",3734,15,11
+5b43728b0da3ef07106a790f,apache,kylin,Apache Kylin,https://github.com/apache/kylin,2015-01-03T08:00:05Z,"",false,27,"",12975,1526,1131
+5b45f6670da3ef0712a85125,apache,nutch,Apache Nutch is an extensible and scalable web crawler,https://github.com/apache/nutch,2009-05-21T01:17:48Z,"",false,15,"",3532,546,366
+5b4853f80da3ef0712a85127,apache,tika,"The Apache Tika toolkit detects and extracts metadata and text from over a thousand different file types (such as PPT, XLS, and PDF).",https://github.com/apache/tika,2009-05-21T02:12:11Z,"",false,22,"",4933,394,190
+5b62dc8b0da3ef049126bdb8,apache,deltaspike,Mirror of Apache Deltaspike,https://github.com/apache/deltaspike,2013-06-04T07:00:12Z,"",false,15,"",2311,112,42
+5b7ad7860da3ef049126bdbb,apache,systemds,An open source ML system for the end-to-end data science lifecycle,https://github.com/apache/systemds,2015-11-10T08:00:06Z,"",false,16,"",6196,0,0
+5b89102a0da3ef04920e02fe,apache,lens,Mirror of Apache Lens,https://github.com/apache/lens,2014-11-12T08:00:06Z,2021-05-12T02:22:45Z,false,6,"",2418,36,5
+5bdb01850da3ef21a58b3377,apache,knox,Mirror of Apache Knox,https://github.com/apache/knox,2014-03-01T08:00:06Z,"",false,11,"",2069,382,308
+5b6446e40da3ef048efc47dd,apache,jspwiki,"Apache JSPWiki is a leading open source WikiWiki engine, feature-rich and built around standard JEE components (Java, servlets, JSP)",https://github.com/apache/jspwiki,2009-03-27T15:41:58Z,"",false,10,"",8809,23,15
+5c3f09db0da3ef512137483f,apache,manifoldcf,Mirror of Apache ManifoldCF,https://github.com/apache/manifoldcf,2012-06-22T07:00:16Z,"",false,7,"",5936,33,0
+5c5012230da3ef08914b280e,apache,eagle,Mirror of Apache Eagle,https://github.com/apache/eagle,2015-11-18T08:00:06Z,2021-05-12T02:22:41Z,false,4,"",1119,1005,22
+5caee5640da3ef745ec4cc84,apache,santuario-java,Mirror of Apache Santuario Java,https://github.com/apache/santuario-java,2011-07-23T07:00:31Z,2020-05-26T11:08:19Z,false,4,"",3376,27,0
+5b0fa95e0da3ef431af80833,apache,kafka,Mirror of Apache Kafka,https://github.com/apache/kafka,2011-08-15T18:06:16Z,"",false,68,"",6971,9833,3728
+5b110ee90da3ef05a99f0de6,apache,zeppelin,"Web-based notebook that enables data-driven, interactive data analytics and collaborative documents with SQL, Scala and more.",https://github.com/apache/zeppelin,2015-03-25T07:00:06Z,"",false,13,"",4735,4011,24
+5b2225520da3ef3e52ece5e2,apache,struts,"Apache Struts is a free, open-source, MVC framework for creating elegant, modern Java web applications",https://github.com/apache/struts,2014-01-15T08:00:08Z,"",false,13,"",6080,465,377
+5b2903690da3ef789cc240ea,apache,pig,Mirror of Apache Pig,https://github.com/apache/pig,2009-05-21T01:10:43Z,"",false,3,"",5064,35,0
+5b4329280da3ef07116c76f0,apache,falcon,Mirror of Apache Falcon,https://github.com/apache/falcon,2013-07-20T07:00:14Z,2021-04-04T19:05:21Z,false,5,"",2550,417,0
+5b72ac790da3ef049126bdb9,apache,xerces2-j,Mirror of Apache Xerces2 Java,https://github.com/apache/xerces2-j,2010-11-15T08:00:08Z,"",false,3,"",7787,8,0
+5b76be770da3ef049126bdba,apache,tez,Apache Tez,https://github.com/apache/tez,2013-04-08T07:20:23Z,"",false,11,"",3683,85,4
+5b7ffd4e0da3ef049126bdbd,apache,storm,Apache Storm,https://github.com/apache/storm,2013-11-05T08:00:14Z,"",false,26,"",13097,3369,2563
+5bc5fab40da3ef0dde0d1fed,apache,logging-flume,"Apache Flume is a distributed, reliable, and available service for efficiently collecting, aggregating, and moving large amounts of log-like data",https://github.com/apache/logging-flume,2011-08-12T18:20:14Z,"",false,18,"",2559,326,19
+5bc5cf050da3ef0de20a7284,apache,pdfbox,Mirror of Apache PDFBox,https://github.com/apache/pdfbox,2009-09-26T08:00:19Z,"",false,3,"",10413,97,0
+5bd022e30da3ef1a10738359,apache,nifi,Apache NiFi,https://github.com/apache/nifi,2014-12-12T08:00:05Z,"",false,51,"",5376,4727,264
+5bee7a2a0da3ef21a58b337e,apache,commons-imaging,Apache Commons Imaging (previously Sanselan) is a pure-Java image library,https://github.com/apache/commons-imaging,2013-07-11T07:00:17Z,"",false,31,"",1066,115,52
+5bdc03c30da3ef21a62b756c,apache,derby,Mirror of Apache Derby,https://github.com/apache/derby,2011-06-19T07:00:34Z,"",false,3,"",10973,7,0
+5c4576f30da3ef08928c5fd7,apache,ranger,"Apache Ranger - To enable, monitor and manage comprehensive data security across the Hadoop platform and beyond",https://github.com/apache/ranger,2014-07-27T07:00:08Z,"",false,25,"",3785,80,0
+600331161b86c4258c362292,apache,directory-fortress-core,Mirror of Apache Directory Fortress Core,https://github.com/apache/directory-fortress-core,2015-10-02T07:00:05Z,"",false,9,"",1617,12,10
+5ca733460da3ef745ec4cc83,apache,phoenix,Apache Phoenix,https://github.com/apache/phoenix,2014-06-04T07:00:08Z,"",false,33,"",11006,1035,183
+5cb58a500da3ef74602db8dd,apache,helix,Mirror of Apache Helix,https://github.com/apache/helix,2014-01-13T08:00:06Z,"",false,16,"",3712,941,816
+5cb58add0da3ef7463511086,apache,jena,"Apache Jena, A free and open source Java framework for building Semantic Web and Linked Data applications.",https://github.com/apache/jena,2013-01-04T08:00:32Z,"",false,15,"",21365,894,734
+5cd27fe20da3ef671cda02e7,apache,httpcomponents-client,Mirror of Apache HttpClient,https://github.com/apache/httpcomponents-client,2009-05-21T01:43:06Z,"",false,11,"",3706,271,114
+5d8cb4a10da3ef0b68077801,apache,httpcomponents-core,Mirror of Apache HttpCore,https://github.com/apache/httpcomponents-core,2009-05-21T01:41:50Z,"",false,9,"",3905,239,116
+5d91bbb20da3ef35cfd2f443,apache,streams,Apache Streams,https://github.com/apache/streams,2014-03-18T07:00:06Z,2025-01-06T21:00:56Z,false,9,"",1945,514,410
+5d91bc110da3ef35ce147e4a,apache,samza,Mirror of Apache Samza,https://github.com/apache/samza,2015-03-14T07:00:05Z,"",false,25,"",2274,1446,416
+5d91bcdd0da3ef35d1432e3c,apache,roller,Mirror of Apache Roller,https://github.com/apache/roller,2009-05-21T02:42:21Z,"",false,7,"",4798,67,52
+5d9edd090da3ef03c84bcf46,apache,mina-sshd,Apache MINA sshd is a comprehensive Java library for client- and server-side SSH.,https://github.com/apache/mina-sshd,2010-05-26T23:38:08Z,"",false,8,"",1865,176,29
+5db7e7440da3ef03c5c29845,apache,jackrabbit,Apache Jackrabbit,https://github.com/apache/jackrabbit,2009-05-21T01:43:24Z,"",false,27,"",13432,73,1
+5e6f7e7e0da3ef2ed37503a8,apache,oozie,Mirror of Apache Oozie,https://github.com/apache/oozie,2011-09-14T07:00:10Z,"",false,11,"",3112,54,0
+5e71c4d43c63727691322420,apache,activemq,Apache ActiveMQ Classic,https://github.com/apache/activemq,2009-05-21T01:33:45Z,"",false,25,"",12522,596,275
+5e84988880c620a732667310,apache,maven,Apache Maven core,https://github.com/apache/maven,2009-05-21T03:22:03Z,"",false,34,"",12594,402,58
+5e8ecd873c63727691322421,apache,airavata,A general purpose Distributed Systems Framework,https://github.com/apache/airavata,2014-01-29T08:00:06Z,"",false,16,"",9513,267,160
+5f1050f2eafc140f94041bf7,apache,openjpa,Apache OpenJPA,https://github.com/apache/openjpa,2009-05-21T01:13:25Z,"",false,11,"",7270,70,30
+6076b1088d56179891397c6f,apache,directory-studio,Apache Directory Studio,https://github.com/apache/directory-studio,2009-05-20T01:52:19Z,"",false,12,"",6061,13,10
+60814f734064fcb5083898b4,apache,xmlgraphics-batik,Apache XML Graphics Batik,https://github.com/apache/xmlgraphics-batik,2009-05-21T02:32:14Z,"",false,4,"",3760,27,0
+608b9b0227ad48a9ceb48654,apache,curator,Apache Curator,https://github.com/apache/curator,2014-03-03T08:00:07Z,"",false,14,"",3131,392,241
+608b9e8d4064fcb5083898b5,apache,directory-kerby,Mirror of Apache Directory Kerby,https://github.com/apache/directory-kerby,2015-03-17T07:00:05Z,"",false,13,"",2074,100,49
+608c3a354064fcb5083898b6,apache,fineract,Apache Fineract,https://github.com/apache/fineract,2015-12-22T08:00:06Z,"",false,36,"",6113,1798,1309
+60a24a978d56179891397c71,apache,freemarker,Apache Freemarker,https://github.com/apache/freemarker,2015-09-04T07:00:05Z,"",false,8,"",3370,69,45
+60a24ac427ad48a9ceb48656,apache,openwebbeans,Apache OpenWebBeans,https://github.com/apache/openwebbeans,2011-01-28T08:00:11Z,"",false,14,"",4271,35,10
+5beebd530da3ef21a2107883,apache,commons-jexl,Apache Commons JEXL,https://github.com/apache/commons-jexl,2013-07-10T07:00:14Z,"",false,30,"",3276,36,17
+5beebdd90da3ef21a62b756f,apache,commons-scxml,Apache Commons SCXML,https://github.com/apache/commons-scxml,2015-07-10T07:00:05Z,"",false,31,"",1216,8,4
+60a24a6992d37bcecc65bf82,apache,cxf-fediz,Mirror of Apache CXF,https://github.com/apache/cxf-fediz,2014-03-08T08:00:07Z,"",false,11,"",2547,60,29
+5ca4c6b26bcebe2f4003c6e4,apache,zookeeper,Apache ZooKeeper,https://github.com/apache/zookeeper,2009-03-27T15:41:56Z,"",false,22,"",2952,1563,1
+610939f8a6eb327cba047eca,apache,tapestry-5,A component-oriented framework for creating highly scalable web applications in Java.,https://github.com/apache/tapestry-5,2012-05-23T07:00:11Z,"",false,7,"",6311,24,0
+61093a618d56179891397c7b,apache,reef,Mirror of Apache REEF,https://github.com/apache/reef,2014-10-23T07:00:10Z,2022-08-04T01:33:12Z,false,12,"",3952,1502,38
+61093ee18d56179891397c7c,apache,juddi,Mirror of Apache jUDDI,https://github.com/apache/juddi,2014-02-21T08:00:09Z,2023-02-27T20:55:06Z,false,6,"",3119,3,3
+6110d80c27ad48a9ceb48659,apache,velocity-engine,Mirror of Apache Velocity Engine,https://github.com/apache/velocity-engine,2013-11-22T08:00:13Z,"",false,7,"",4833,19,8
+6110d8254064fcb5083898b9,apache,velocity-tools,Mirror of Apache Velocity Tools,https://github.com/apache/velocity-tools,2013-11-22T08:00:14Z,"",false,6,"",1905,3,2
+6110e8974064fcb5083898ba,apache,karaf-cellar,Mirror of Apache Karaf Cellar,https://github.com/apache/karaf-cellar,2011-05-22T07:00:07Z,"",false,11,"",2557,81,59
+61435682b0e435ddc69c115a,apache,maven-archetype,Apache Maven Archetype (Plugin),https://github.com/apache/maven-archetype,2009-05-21T08:40:29Z,"",false,28,"",1764,81,33
+61486e4edde5881c37c6143f,apache,maven-doxia,Apache Maven Doxia base,https://github.com/apache/maven-doxia,2009-05-21T03:16:25Z,"",false,28,"",1967,70,30
+6149f43cb0e435ddc69c115b,apache,maven-scm,Apache Maven SCM (Plugin),https://github.com/apache/maven-scm,2009-05-21T00:33:04Z,"",false,26,"",2183,126,40
+614d90dff4bb27b887c2f3ed,apache,maven-surefire,Apache Maven Surefire,https://github.com/apache/maven-surefire,2010-08-12T03:32:41Z,"",false,35,"",3317,358,148
+61541ebab0e435ddc69c115c,apache,maven-wagon,Apache Maven Wagon,https://github.com/apache/maven-wagon,2009-05-20T02:01:12Z,"",false,26,"",1484,76,19
+615b1a1514fce7546046bf26,apache,oodt,Mirror of Apache OODT,https://github.com/apache/oodt,2013-01-21T08:00:15Z,2023-07-03T18:39:01Z,false,11,"",2883,119,68
+615c13af3298191e9c3db4e3,apache,portals-pluto,Mirror of Apache Pluto,https://github.com/apache/portals-pluto,2014-05-23T07:00:07Z,"",false,9,"",3320,26,16
+615e90db3044794dcc96fe1e,apache,qpid-jms,Mirror of Apache Qpid JMS,https://github.com/apache/qpid-jms,2014-09-24T07:00:07Z,"",false,11,"",2305,44,8
+6161afe13298191e9c3db4e4,apache,sis,Java language library for developing geospatial applications following OGC/ISO standards.,https://github.com/apache/sis,2013-06-11T07:00:15Z,"",false,8,"",7524,23,10
+616813a52d6371da535b391f,apache,uima-ducc,Apache UIMA Ducc,https://github.com/apache/uima-ducc,2023-07-18T13:08:57Z,"",false,7,"",5018,6,0
+5e715356b17d31206492bf58,apache,avro,Apache Avro is a data serialization system.,https://github.com/apache/avro,2009-05-21T02:48:37Z,"",false,25,"",2788,1379,854
+61699f852d6371da535b3920,apache,usergrid,Mirror of Apache Usergrid,https://github.com/apache/usergrid,2013-11-05T08:00:14Z,2024-06-07T16:04:09Z,false,12,"",11187,620,465
+5bc0509e0da3ef0ddd6d593e,apache,james-project,Emails at the heart of your business logic!,https://github.com/apache/james-project,2015-07-11T07:00:06Z,"",false,16,"",5764,282,23
