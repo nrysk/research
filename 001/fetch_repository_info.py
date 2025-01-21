@@ -73,6 +73,9 @@ def main(args):
                     assignableUsers {{
                         totalCount
                     }}
+                    stargazers {{
+                        totalCount
+                    }}
                     mirrorUrl
                 }},
             """
