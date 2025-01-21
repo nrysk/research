@@ -97,6 +97,7 @@ def process_project(project: Project) -> list[dict]:
         "merged_at",
         "source_repo_url",
         "target_repo_url",
+        "creator_id",
     )
 
     rows = []
@@ -273,26 +274,9 @@ def main(args):
     df = pl.DataFrame()
 
     # プロジェクトの取得
-    projects: list[Project] = Project.objects(
-        name__in=[
-            "maven-archetype",
-            "commons-configuration",
-            "commons-dbcp",
-            "commons-rdf",
-            "reef",
-            "commons-bcel",
-            "commons-math",
-            "maven-scm",
-            "deltaspike",
-            "systemml",
-            "freemarker",
-            "directory-kerby",
-            "commons-imaging",
-            "roller",
-            "commons-compress",
-            "maven",
-        ]
-    )
+    projects: list[Project] = Project.objects
+    if not args.full:
+        projects = projects[:16]
 
     # 並行実行のためにデータベース接続を閉じる
     client.close()
@@ -320,5 +304,8 @@ if __name__ == "__main__":
     parser.add_argument(
         "-o", "--output", type=str, default="data/pull_request_features.csv"
     )
+    parser.add_argument("--full", default=False, action="store_true")
+
     args = parser.parse_args()
+
     main(args)
