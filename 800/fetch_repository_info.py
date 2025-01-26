@@ -73,6 +73,15 @@ def main(args):
                     assignableUsers {{
                         totalCount
                     }}
+                    languages(first: 8, orderBy: {{direction: DESC, field: SIZE}}) {{
+                        edges {{
+                            size
+                            node {{
+                                name
+                            }}
+                        }}
+                        totalSize
+                    }}
                     stargazers {{
                         totalCount
                     }}
@@ -96,12 +105,32 @@ def main(args):
                 "project_id": key.split("_")[1],
             }
             for k, v in value.items():
-                if isinstance(v, dict):
+                if k == "languages":
+                    # 第一言語とその割合を取得
+                    row["primary_language"] = v["edges"][0]["node"]["name"]
+                    row["primary_language_ratio"] = (
+                        f"{v["edges"][0]["size"] / v["totalSize"]:.2f}"
+                    )
+                    # 第二言語とその割合を取得
+                    row["secondary_language"] = None
+                    row["secondary_language_ratio"] = None
+                    row["other_languages"] = None
+                    if len(v["edges"]) > 1:
+                        row["secondary_language"] = v["edges"][1]["node"]["name"]
+                        row["secondary_language_ratio"] = (
+                            f"{v["edges"][1]["size"] / v["totalSize"]:.2f}"
+                        )
+                        # その他の言語名を取得
+                        row["other_languages"] = str(
+                            [edge["node"]["name"] for edge in v["edges"][2:]]
+                        )
+
+                elif isinstance(v, dict):
                     for kk, vv in v.items():
-                        row[f"{k}.{kk}"] = vv if vv is not None else ""
+                        row[f"{k}.{kk}"] = str(vv)
 
                 else:
-                    row[k] = v if v is not None else ""
+                    row[k] = str(v)
 
             # commit と pull request の数を取得
             vcs_system = VCSSystem.objects(project_id=row["project_id"]).first()
@@ -116,7 +145,7 @@ def main(args):
                 pull_request_system_id=pull_request_system.id, merged_at__exists=True
             ).count()
 
-            df = df.vstack(pl.DataFrame(row))
+            df = pl.concat([df, pl.DataFrame(row)], how="diagonal_relaxed")
 
     # CSV に保存
     df.write_csv(args.output)
