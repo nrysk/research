@@ -1,6 +1,7 @@
 jupyter
 numpy
 polars
+pandas
 matplotlib
 seaborn
 pycoshark
@@ -9,3 +10,4 @@ pyarrow
 gql[all]
 scipy
 dvc
+statsmodels
