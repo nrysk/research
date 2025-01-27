@@ -27,17 +27,39 @@ sys.path.append(os.path.join(os.path.dirname(__file__), ".."))
 from utils.timeit_decorator import timeit_decorator
 
 # 定数
-IGNORED_PROJECTS = [
+IGNORED_PROJECTS = (
     "jacketrabbit",
     "maven",
     "tapestry-5",
     "james",
     "commons-rdf",
     "bigtop",
-]
-BOT_IDS = [
-    "5ff191c8c26a57681e7b99d0",  # dependabot
-]
+)
+BOT_IDS = ("5ff191c8c26a57681e7b99d0",)  # dependabot
+SOURCE_FILE_EXTENSIONS = (
+    # Java
+    ".java",
+    # Scala
+    ".scala",
+    # Python
+    ".py",
+    # C
+    ".c",
+    ".h",
+    # C++
+    ".cpp",
+    ".hpp",
+    ".cc",
+    ".hh",
+    ".cxx",
+    ".hxx",
+    # C#
+    ".cs",
+    # JavaScript
+    ".js",
+    # TypeScript
+    ".ts",
+)
 
 # ロギングの設定
 basicConfig(
@@ -204,8 +226,13 @@ def process_project(project: Project) -> list[dict]:
         # Bot によるプルリクエストかどうか
         row["bot"] = str(pull_request.creator_id) in BOT_IDS
 
+        # コード変更かどうか
+        row["code_change"] = any(
+            pull_request_file.path.endswith(tuple(SOURCE_FILE_EXTENSIONS))
+            for pull_request_file in pull_request_files
+        )
+
         # ソースとターゲットのリポジトリが同じかどうか
-        # ソースが存在しない場合は同じではないとする
         source_owner, source_repository = (
             pull_request.source_repo_url.split("/")[-2:]
             if pull_request.source_repo_url
@@ -275,7 +302,7 @@ def main(args):
 
     # プロジェクトの取得
     projects: list[Project] = Project.objects
-    if not args.full:
+    if args.small:
         projects = projects[:16]
 
     # 並行実行のためにデータベース接続を閉じる
@@ -304,7 +331,7 @@ if __name__ == "__main__":
     parser.add_argument(
         "-o", "--output", type=str, default="data/pull_request_features.csv"
     )
-    parser.add_argument("--full", default=False, action="store_true")
+    parser.add_argument("--small", default=False, action="store_true")
 
     args = parser.parse_args()
 
