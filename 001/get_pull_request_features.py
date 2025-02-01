@@ -26,9 +26,11 @@ from pycoshark.utils import create_mongodb_uri_string
 sys.path.append(os.path.join(os.path.dirname(__file__), ".."))
 from utils.timeit_decorator import timeit_decorator
 
+# ========================================
 # 定数
+# ========================================
 IGNORED_PROJECTS = (
-    "jacketrabbit",
+    "jackrabbit",
     "maven",
     "tapestry-5",
     "james",
@@ -99,7 +101,6 @@ def worker(project: Project) -> pl.DataFrame:
 
 
 def process_project(project: Project) -> list[dict]:
-    vcs_system_id = VCSSystem.objects(project_id=project.id).first().id
     pull_request_systems = PullRequestSystem.objects(project_id=project.id).only(
         "id", "url"
     )
@@ -239,7 +240,7 @@ def process_project(project: Project) -> list[dict]:
             else (None, None)
         )
         target_owner, target_repository = pull_request.target_repo_url.split("/")[-2:]
-        row["same_repository"] = (
+        row["intra_branch"] = (
             source_owner == target_owner and source_repository == target_repository
         )
 

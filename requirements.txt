@@ -11,3 +11,5 @@ gql[all]
 scipy
 dvc
 statsmodels
+shap
+xgboost

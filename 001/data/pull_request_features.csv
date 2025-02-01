@@ -1,4 +1,4 @@
-project,id,age,#commits,#added,#deleted,#files,#comments,#review_comments,bot,code_change,same_repository,#approvals,#changes_requested,fix,test,buggy,url
+project,id,age,#commits,#added,#deleted,#files,#comments,#review_comments,bot,code_change,intra_branch,#approvals,#changes_requested,fix,test,buggy,url
 commons-bcel,5ff19d7fad38daddddf61288,73.46666666666667,5,168,64,6,0,0,false,true,true,0,0,true,true,false,https://github.com/apache/commons-bcel/pull/23
 commons-dbcp,5ff1a8abb8cea70784f68525,1549.4166666666667,1,37,0,2,2,0,false,true,false,1,0,false,true,false,https://github.com/apache/commons-dbcp/pull/29
 commons-dbcp,5ff1a8b2b8cea70784f6853c,2534.6666666666665,1,146,0,1,0,0,false,true,false,0,0,true,true,false,https://github.com/apache/commons-dbcp/pull/22
