@@ -121,6 +121,7 @@ def process_project(project: Project) -> list[dict]:
         "source_repo_url",
         "target_repo_url",
         "creator_id",
+        "author_association",
     )
 
     rows = []
@@ -281,6 +282,11 @@ def process_project(project: Project) -> list[dict]:
                 if induce["label"] == "JL+R":
                     row["buggy"] = True
                     break
+
+        # 作成者がメンバーかどうか
+        row["is_member"] = pull_request.author_association == "MEMBER"
+
+
 
         # プルリクエストへのリンク
         row["url"] = f"{pull_request_system_url}/{pull_request.external_id}"

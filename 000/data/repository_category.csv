@@ -1,0 +1,99 @@
+project,category,description
+commons-rdf,"General Libraries & Utilities (Apache Commons)",RDF (Resource Description Framework) を扱うための共通Java API。
+ant-ivy,"Build & Dependency Management",Antと連携して、プロジェクトの依存関係を管理するためのツール。
+commons-math,"General Libraries & Utilities (Apache Commons)","数学・統計関連の計算を行うためのライブラリ。"
+mahout,"Big Data - Processing & Analytics (ビッグデータ - 処理・分析)","機械学習のアルゴリズムを提供するライブラリ。クラスタリングや分類が主。"
+opennlp,"Big Data - Processing & Analytics (ビッグデータ - 処理・分析)",自然言語処理 (NLP) のための機械学習ツールキット。
+calcite,"Big Data - Processing & Analytics (ビッグデータ - 処理・分析)","動的なデータ管理システムを構築するための基盤ソフトウェア。SQLパーサーやオプティマイザーを提供。"
+cayenne,"Database & Data Mapping (データベース & データマッピング)",JavaオブジェクトをリレーショナルデータベースにマッピングするO/Rマッピングフレームワーク。
+archiva,"Build & Dependency Management","Mavenリポジトリの管理ツール。プロキシやミラーリング機能を持つ。"
+bigtop,"Big Data - Data & Infrastructure (ビッグデータ - データ基盤)",Hadoopエコシステムのパッケージング、デプロイ、テストを容易にするためのプロジェクト。
+commons-bcel,"General Libraries & Utilities (Apache Commons)",Javaのクラスファイルを操作（生成・解析）するためのライブラリ。
+commons-beanutils,"General Libraries & Utilities (Apache Commons)",JavaBeansのプロパティを簡単に操作するためのユーティリティ。
+commons-codec,"General Libraries & Utilities (Apache Commons)","Base64, Hex, 音声エンコーディングなど、様々なエンコード・デコード機能を提供。"
+commons-collections,"General Libraries & Utilities (Apache Commons)",Java標準のコレクションAPIを拡張する、より高機能なコレクションクラスを提供。
+commons-compress,"General Libraries & Utilities (Apache Commons)","tar, zip, bzip2など、様々な圧縮フォーマットを扱うためのライブラリ。"
+commons-configuration,"General Libraries & Utilities (Apache Commons)","設定ファイル（プロパティファイル、XMLなど）を簡単に扱うためのライブラリ。"
+commons-dbcp,"Database & Data Mapping (データベース & データマッピング)",データベース接続のプーリング機能を提供するライブラリ。
+commons-digester,"General Libraries & Utilities (Apache Commons)",XMLをJavaオブジェクトにマッピングするためのライブラリ。
+commons-io,"General Libraries & Utilities (Apache Commons)",ファイルI/Oに関する様々なユーティリティ機能を提供。
+commons-jcs,"General Libraries & Utilities (Apache Commons)",Javaで利用できるキャッシュシステム。
+commons-lang,"General Libraries & Utilities (Apache Commons)","Javaの基本的なクラス（String, Numberなど）を拡張するユーティリティ機能を提供。"
+commons-net,"General Libraries & Utilities (Apache Commons)","FTP, SMTP, HTTPなど、様々なネットワークプロトコルを扱うためのライブラリ。"
+commons-validator,"General Libraries & Utilities (Apache Commons)",値のバリデーション（検証）を行うためのフレームワーク。
+commons-vfs,"General Libraries & Utilities (Apache Commons)","ローカルファイル、FTP、SFTPなどを統一的なAPIで仮想ファイルシステムとして扱うライブラリ。"
+giraph,"Big Data - Processing & Analytics (ビッグデータ - 処理・分析)",大規模なグラフ処理を行うための分散コンピューティングフレームワーク。
+gora,"Big Data - Data & Infrastructure (ビッグデータ - データ基盤)",大規模データを扱うためのインメモリデータモデルと永続化ライブラリ。
+parquet-java,"Big Data - Data & Infrastructure (ビッグデータ - データ基盤)","カラムナ指向（列指向）のデータフォーマット。分析クエリの高速化に貢献。"
+ws-wss4j,"Security & Identity Management (セキュリティ・ID管理)",Webサービスのセキュリティ仕様 (WS-Security) を実装したライブラリ。
+kylin,"Big Data - Processing & Analytics (ビッグデータ - 処理・分析)","Hadoop上の大規模データを対象とした、超高速な分析 (OLAP) を可能にするエンジン。"
+nutch,"Specialized Tools & Frameworks (専門ツール・その他)",高度にモジュール化されたWebクローラー（検索エンジンロボット）。
+tika,"XML, Graphics & Document Processing (XML・グラフィック・文書処理)","様々なファイル形式（Word, PDF, HTMLなど）からテキストやメタデータを抽出するライブラリ。"
+deltaspike,"Web & Application Frameworks (Web・アプリフレームワーク)",CDI (Contexts and Dependency Injection) を拡張し、Java EE開発を支援するライブラリ群。
+systemds,"Big Data - Processing & Analytics (ビッグデータ - 処理・分析)","機械学習アルゴリズム（特に線形代数）を大規模データ上で効率的に実行するプラットフォーム。"
+lens,"Big Data - Processing & Analytics (ビッグデータ - 処理・分析)","ビッグデータ分析のための一元化された分析プラットフォーム。"
+knox,"Security & Identity Management (セキュリティ・ID管理)","Hadoopクラスタへのアクセスをセキュアにするためのリバースプロキシ（APIゲートウェイ）。"
+jspwiki,"Specialized Tools & Frameworks (専門ツール・その他)",JSP (JavaServer Pages) で実装されたWikiエンジン。
+manifoldcf,"Specialized Tools & Frameworks (専門ツール・その他)","複数のコンテンツリポジトリ（ファイル共有、SharePointなど）からコンテンツを収集し、検索エンジンに投入するためのフレームワーク。"
+eagle,Big Data - Processing & Analytics (ビッグデータ - 処理・分析),分散環境におけるリアルタイムのデータアクティビティ監視・警告プラットフォーム。※現在Apache Attic(引退)プロジェクト
+santuario-java,"Security & Identity Management (セキュリティ・ID管理)",XML署名およびXML暗号化の標準仕様を実装したJavaライブラリ。
+kafka,"Messaging & Streaming (メッセージング & ストリーミング)","高スループットな分散メッセージングシステム。リアルタイムのデータパイプラインやストリーミング処理で広く利用。"
+zeppelin,Big Data - Processing & Analytics (ビッグデータ - 処理・分析),"対話的なデータ分析と可視化を可能にする、Webベースのノートブック。"
+struts,"Web & Application Frameworks (Web・アプリフレームワーク)",MVCアーキテクチャに基づいた、歴史あるWebアプリケーションフレームワーク。
+pig,"Big Data - Processing & Analytics (ビッグデータ - 処理・分析)",MapReduceをより簡単に記述するための高水準なデータフロー言語および実行環境。
+falcon,"Big Data - Data & Infrastructure (ビッグデータ - データ基盤)",データパイプラインやデータライフサイクルを管理するためのフレームワーク。
+xerces2-j,"XML, Graphics & Document Processing (XML・グラフィック・文書処理)",高性能なXMLパーサー。
+tez,"Big Data - Processing & Analytics (ビッグデータ - 処理・分析)","Hadoop YARN上で、より高速で効率的なデータ処理バッチや対話型クエリを実現するアプリケーションフレームワーク。"
+storm,"Big Data - Processing & Analytics (ビッグデータ - 処理・分析)",リアルタイムで大量のデータを処理するための分散ストリーム処理フレームワーク。
+logging-flume,"Specialized Tools & Frameworks (専門ツール・その他)",大量のログデータを収集、集約、転送するための分散サービス。
+pdfbox,"XML, Graphics & Document Processing (XML・グラフィック・文書処理)",PDF文書の作成、操作、内容抽出を行うためのJavaライブラリ。
+nifi,"Big Data - Processing & Analytics (ビッグデータ - 処理・分析)","システム間でデータを自動的に移動・変換・処理するための、視覚的なフローベースのプラットフォーム。"
+commons-imaging,"General Libraries & Utilities (Apache Commons)",画像ファイルの読み書きや操作を行うためのライブラリ。
+derby,"Database & Data Mapping (データベース & データマッピング)","Javaで実装された軽量なリレーショナルデータベース。組み込み用途にもサーバー用途にも利用可能。"
+ranger,"Security & Identity Management (セキュリティ・ID管理)",Hadoopエコシステム全体で一貫したデータセキュリティ（認可、監査）を提供。
+directory-fortress-core,"Security & Identity Management (セキュリティ・ID管理)",RBAC（ロールベースアクセス制御）を実現するためのID管理システム。
+phoenix,"Database & Data Mapping (データベース & データマッピング)",HBase上でSQLクエリを可能にするためのレイヤー。
+helix,"Distributed Systems & Coordination (分散システム・協調)","分散システムのクラスタ管理フレームワーク。リソースの自動的な割り当てやフェイルオーバーを実現。"
+jena,"Specialized Tools & Frameworks (専門ツール・その他)","セマンティックWeb技術（RDF, OWL, SPARQL）を扱うためのJavaフレームワーク。"
+httpcomponents-client,"Servers, Networking & Protocol (サーバー・ネットワーク)",高機能で柔軟なHTTPクライアントライブラリ。
+httpcomponents-core,"Servers, Networking & Protocol (サーバー・ネットワーク)",HTTPプロトコルの低レベルな実装を提供するコアコンポーネント。
+streams,"Messaging & Streaming (メッセージング & ストリーミング)",軽量なメッセージ処理やデータフローを構築するためのライブラリ。
+samza,"Big Data - Processing & Analytics (ビッグデータ - 処理・分析)","リアルタイムのストリームデータを処理するための分散フレームワーク。Kafkaと連携して使われることが多い。"
+roller,"Web & Application Frameworks (Web・アプリフレームワーク)",Javaベースのブログサーバーアプリケーション。
+mina-sshd,"Servers, Networking & Protocol (サーバー・ネットワーク)",JavaでSSHサーバーやクライアントを実装するためのライブラリ。
+jackrabbit,"Specialized Tools & Frameworks (専門ツール・その他)",JCR (Java Content Repository) APIの標準仕様に準拠したコンテンツリポジトリ。
+oozie,"Big Data - Processing & Analytics (ビッグデータ - 処理・分析)",Hadoopジョブのワークフローを管理・スケジューリングするためのシステム。
+activemq,"Messaging & Streaming (メッセージング & ストリーミング)","Java Message Service (JMS) に準拠した、高機能なメッセージブローカー。"
+maven,"Build & Dependency Management","プロジェクトのビルド、依存関係管理、ドキュメンテーションなどを一元管理するツール。"
+airavata,"Big Data - Processing & Analytics (ビッグデータ - 処理・分析)","計算科学や科学技術計算のワークフローを管理・実行するためのゲートウェイソフトウェア。"
+openjpa,"Database & Data Mapping (データベース & データマッピング)",Java Persistence API (JPA) の仕様に準拠したO/Rマッピングフレームワーク。
+directory-studio,"Servers, Networking & Protocol (サーバー・ネットワーク)",LDAPサーバーを管理するためのEclipseベースのGUIクライアント。
+xmlgraphics-batik,"XML, Graphics & Document Processing (XML・グラフィック・文書処理)",SVG (Scalable Vector Graphics) の表示、生成、操作を行うためのJavaツールキット。
+curator,"Distributed Systems & Coordination (分散システム・協調)",ZooKeeperをより簡単かつ安全に利用するためのクライアントライブラリ。
+directory-kerby,"Security & Identity Management (セキュリティ・ID管理)",Kerberosプロトコルを実装したJavaライブラリ。
+fineract,"Database & Data Mapping (データベース & データマッピング)","金融サービス（特にマイクロファイナンス）向けのコアバンキングシステム。"
+freemarker,"XML, Graphics & Document Processing (XML・グラフィック・文書処理)","テンプレートとデータモデルを結合してテキスト（HTML, XMLなど）を生成するテンプレートエンジン。"
+openwebbeans,"Web & Application Frameworks (Web・アプリフレームワーク)",Java EEのCDI仕様に準拠した実装。
+commons-jexl,"General Libraries & Utilities (Apache Commons)",JEXL (Java Expression Language) を実装した式言語ライブラリ。
+commons-scxml,"General Libraries & Utilities (Apache Commons)",State Chart XML (SCXML) に基づくステートマシンエンジン。
+cxf-fediz,"Security & Identity Management (セキュリティ・ID管理)",Webアプリケーションにフェデレーション認証（ID連携）を組み込むためのフレームワーク。
+zookeeper,"Distributed Systems & Coordination (分散システム・協調)","分散システムにおける設定情報の管理、名前解決、同期などを提供する協調サービス。"
+tapestry-5,"Web & Application Frameworks (Web・アプリフレームワーク)",コンポーネントベースのWebアプリケーションフレームワーク。
+reef,"Big Data - Processing & Analytics (ビッグデータ - 処理・分析)","大規模データ処理アプリケーションを構築するためのライブラリ。YARNやMesos上で動作。"
+juddi,"Security & Identity Management (セキュリティ・ID管理)","UDDI (Universal Description, Discovery, and Integration) 仕様に準拠したWebサービスレジストリ。"
+velocity-engine,"Web & Application Frameworks (Web・アプリフレームワーク)",JavaコードとHTMLを分離するためのテンプレートエンジン。
+velocity-tools,"Web & Application Frameworks (Web・アプリフレームワーク)",VelocityテンプレートエンジンをWebアプリケーションで使いやすくするためのツール群。
+karaf-cellar,"Distributed Systems & Coordination (分散システム・協調)",Karafクラスタ内での設定同期やイベント共有などを実現するクラスタリングソリューション。
+maven-archetype,"Build & Dependency Management",Mavenプロジェクトのひな形を作成するツール。
+maven-doxia,"Build & Dependency Management",様々なマークアップ言語からドキュメントを生成するためのフレームワーク。
+maven-scm,"Build & Dependency Management","Subversion, Gitなどのバージョン管理システムを統一的に扱うためのMavenプラグイン。"
+maven-surefire,"Build & Dependency Management",Mavenでユニットテストを実行するためのプラグイン。
+maven-wagon,"Build & Dependency Management",Mavenがリポジトリとの間でアーティファクトを転送するためのトランスポート抽象化ライブラリ。
+oodt,"Big Data - Data & Infrastructure (ビッグデータ - データ基盤)",科学技術データを管理、処理、配布するためのデータグリッドフレームワーク。
+portals-pluto,"Web & Application Frameworks (Web・アプリフレームワーク)",Java Portlet仕様のリファレンス実装であるポータルサーバー。
+qpid-jms,"Messaging & Streaming (メッセージング & ストリーミング)",AMQPプロトコルをサポートするJMSクライアント。
+sis,"Big Data - Data & Infrastructure (ビッグデータ - データ基盤)",地理空間データを扱うためのライブラリおよびサーバーアプリケーション。
+uima-ducc,"Big Data - Processing & Analytics (ビッグデータ - 処理・分析)",非構造化情報（テキスト、音声、画像など）を分析する大規模なワークフローを管理するプラットフォーム。
+avro,"Big Data - Data & Infrastructure (ビッグデータ - データ基盤)",スキーマを持つデータシリアライズ（直列化）システム。
+usergrid,"Specialized Tools & Frameworks (専門ツール・その他)",モバイルアプリやWebアプリのためのBackend-as-a-Service (BaaS) プラットフォーム。
+james-project,"Messaging & Streaming (メッセージング & ストリーミング)","SMTP, POP3, IMAPなどをサポートする高機能なメールサーバー。"
